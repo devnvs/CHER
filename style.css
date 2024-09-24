@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    background-color: #0c2722;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    display: flex;
+    position: initial;
+    margin: 1%;
+    color: #0c2722;
+    background-color: #ad7952;
+    border-radius: 6px;
+    border: #ad7952;
+    width: 200px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    border-spacing: 30%;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    z-index: -1;
+    position: static;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    color: #ad7952;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cher-logo {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    padding: 20px;
+    position: top;
+    width: 185px;
+    height: 185px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formulario-agendamento {
+    background-color: #ad7952;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 10%;
+    left: -50%;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*FORMULÁRIO NA POSIÇÃO CENTRAL REAL
+    Inicial
+        top: 10%;
+        left: -50%;
+
+
+    Final
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+*/
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #0c2722;
+    padding-left: 5px;
+    outline-color: #ad7952;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid #0c2722;
+    padding-left: 5px;
+    outline-color: #ad7952;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(12, 39, 34, 0.48792016806722693) 52%, rgba(173, 121, 82, 1) 98%);
+    transition: visibility 0.5s ease-in-out;
+}
+
+.link img {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    right: 0px;
+    top: 89%;
+}
+
+.mostrar-mapa {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    right: 50%;
+    z-index: -1;
+}
